@@ -27,7 +27,7 @@ DefaultContentLanguage           = "pl"                    # Default language fo
         timeZone                 = "Europe/Warsaw"   # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
         timeFormat               = "pl"                 # Language specific format to use
     [params.projects]
-        useTwoColumns            = false                   # Use a layout with two columns instead of three
+        useTwoColumns            = true                  # Use a layout with two columns instead of three
 
     # Share buttons on blog post pages
     [params.share]
@@ -125,29 +125,9 @@ DefaultContentLanguage           = "pl"                    # Default language fo
         languageName     = "English"
         languageCode     = "en-us"
         contentDir       = "content/en"
-        weight           = 0
+        weight           = 1
         title            = "Introduction"
         [languages.en.params]
             description  = "Website Description"   # Max 160 characters show in search results
             # footerText   = ""                      # Text to override default footer text (markdown allowed)
 
-    [languages.es]
-        languageName     = "Español"
-        languageCode     = "es"
-        contentDir       = "content/es"
-        weight           = 1
-        title            = "Introducción"
-        [languages.es.params]
-            description  = "Descripcion del sitio web"
-            # footerText   = ""
-
-    [languages.de]
-        languageName     = "Deutsch"
-        languageCode     = "de"
-        contentDir       = "content/de"
-        weight           = 2
-        title            = "Vorstellung"
-        [languages.de.params]
-            dateFormat   = "2. January 2006"
-            description  = "Beschreibung der Webseite"
-            # footerText   = ""
