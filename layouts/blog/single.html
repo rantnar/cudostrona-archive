@@ -21,7 +21,7 @@
     </h4>
     {{ end }}
     <div class="post-data">
-        {{ if .Params.date }}{{ .Date.Format (.Site.Params.dateFormat | default ":date_short") }}{{ end }}
+        {{ if .Params.date }}{{ .Date.Format (.Site.Params.dateFormat | default ":date_medium") }}{{ end }}
         {{ if .Site.Params.showReadingTime | default true }}
         {{ if .Params.date }} | {{ end }}
         {{ i18n "blog_readingTime" .ReadingTime }}
